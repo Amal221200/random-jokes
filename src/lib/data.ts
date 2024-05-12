@@ -1,0 +1,1 @@
+export const categories = ["Programming", "Miscellaneous", "Dark", "Pun"]
