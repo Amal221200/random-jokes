@@ -15,7 +15,7 @@ const JokeForm = ({ onSubmit }: JokeFormProps) => {
     }, [onSubmit])
 
     return (
-        <form onSubmit={handleSubmit} className="flex gap-2 justify-center max-w-2xl mx-auto flex-col sm:flex-row">
+        <form onSubmit={handleSubmit} className="flex gap-2 justify-center mx-auto flex-col sm:flex-row">
             <Input placeholder="Enter a topic, ex: airplane, etc" name="input" required  />
             <Button type="submit">Generate</Button>
         </form>
