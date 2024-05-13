@@ -18,8 +18,8 @@ const JokeSection = () => {
     }, [])
 
     return (
-        <main className='space-y-2 sm:w-[45%] w-[75%]'>
-            <JokeForm onSubmit={handleJokes} />
+        <main className='w-[75%] space-y-2 sm:w-[45%]'>
+            <JokeForm onSubmit={handleJokes} isLoading={loading} />
             <JokeOutput data={data} loading={loading} />
         </main>
     )

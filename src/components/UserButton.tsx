@@ -20,8 +20,8 @@ const UserButton = () => {
 
 
     return (
-        <Button type="button" onClick={handleClick} variant="ghost" className="flex gap-2 items-center">
-            <Image src={session.data?.user?.image!} alt="" width={30} height={30} className="rounded-full" />
+        <Button type="button" onClick={handleClick} variant="ghost" className="flex items-center gap-2">
+            <Image src={session.data?.user?.image || '/vercel.svg'} alt="" width={30} height={30} className="rounded-full" />
             <LogOut />
         </Button>
     )
